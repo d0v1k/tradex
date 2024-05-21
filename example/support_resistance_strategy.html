@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support and Resistance Strategy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c; /* Dark background */
+            color: #ffffff; /* White text */
+        }
+        h2 {
+            color: #60a5fa; /* Light blue for h2 headers */
+        }
+        h3 {
+            color: #3b82f6; /* Slightly darker blue for h3 headers */
+        }
+        a {
+            color: #3b82f6; /* Blue links */
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="section mb-8">
+        <h2 class="text-2xl font-bold mb-4">Support and Resistance Strategy</h2>
+        <p class="mb-6">Objective: Trade NASDAQ (NAS100) using support and resistance zones with confluence factors for higher probability trades.</p>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Confluence Factors:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>Support and Resistance Zones</li>
+                <li>Candlestick Patterns</li>
+                <li>Volume Spikes</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Identifying Key Zones:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>Use the 1-hour chart with 20/50 MA and volume.</li> <!-- Updated timeframe -->
+                <li>Identify zones where price has reversed or stalled multiple times.</li>
+                <li>Draw horizontal zones, not lines.</li>
+                <li>Confirm zones with at least three touches.</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Entry Criteria:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li><strong>Support Bounce (Buying):</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Price approaches a strong support zone on the 1-hour chart.</li> <!-- Updated timeframe -->
+                        <li>Confirmation: Look for bullish candlestick patterns (e.g., Hammer, Bullish Engulfing) on the 15-minute chart with 5/13/20 MA and volume.</li>
+                        <li>Volume: Ensure there is a volume spike indicating strong buying interest.</li>
+                        <li>Entry: Enter a long position when all conditions are met.</li>
+                    </ul>
+                </li>
+                <li><strong>Resistance Bounce (Selling):</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Price approaches a strong resistance zone on the 1-hour chart.</li> <!-- Updated timeframe -->
+                        <li>Confirmation: Look for bearish candlestick patterns (e.g., Shooting Star, Bearish Engulfing) on the 15-minute chart with 5/13/20 MA and volume.</li>
+                        <li>Volume: Ensure there is a volume spike indicating strong selling interest.</li>
+                        <li>Entry: Enter a short position when all conditions are met.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Exit Criteria:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>Stop-Loss: Set just beyond the support (for buy trades) or resistance (for sell trades) zone.</li>
+                <li>Take-Profit: Set at an equal distance to the stop-loss to maintain a 1:1 risk-reward ratio.</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Risk Management:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>Daily Risk: Limit losses to 5% of account balance per day.</li> <!-- Updated daily risk -->
+                <li>Consecutive Losses: Stop trading after three consecutive losing trades.</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Execution Steps:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li><strong>Pre-Session Preparation:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Identify key support and resistance zones on the 1-hour chart.</li> <!-- Updated timeframe -->
+                        <li>Ensure each identified zone has at least three touches.</li>
+                        <li>Mark these zones on your trading platform.</li>
+                    </ul>
+                </li>
+                <li><strong>During Trading:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Monitor price action around these zones on the 15-minute and 5-minute charts.</li> <!-- Updated timeframe -->
+                        <li>Enter trades when all entry criteria are met.</li>
+                        <li>Place stop-loss and take-profit orders immediately upon entering a trade.</li>
+                    </ul>
+                </li>
+                <li><strong>Post-Trade Review:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Log each trade with entry/exit points, reasons for the trade, and outcomes.</li>
+                        <li>Review daily to identify patterns, learn from mistakes, and improve strategy.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Example Trade Scenarios:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li><strong>Support Bounce:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Identify a strong support zone at 13,000 on the 1-hour chart.</li> <!-- Updated timeframe -->
+                        <li>Confirmation: Price approaches 13,000, a Hammer candlestick forms on the 15-minute chart, volume spike confirms buying interest.</li>
+                        <li>Entry: Enter long at 13,000, set stop-loss at 12,990, take-profit at 13,010.</li>
+                    </ul>
+                </li>
+                <li><strong>Resistance Bounce:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Identify a strong resistance zone at 13,500 on the 1-hour chart.</li> <!-- Updated timeframe -->
+                        <li>Confirmation: Price approaches 13,500, a Shooting Star candlestick forms on the 15-minute chart, volume spike confirms selling interest.</li>
+                        <li>Entry: Enter short at 13,500, set stop-loss at 13,510, take-profit at 13,490.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="back-button mt-8">
+        <a href="index.html" class="text-blue-500">Back to Main Page</a>
+    </div>
+</body>
+</html>

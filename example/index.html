@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Strategies</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c; /* Dark background */
+            color: #ffffff; /* White text */
+        }
+        a {
+            color: #3b82f6; /* Blue links */
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+        }
+        .checklist-item input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Left Column -->
+        <div class="col-span-2">
+            <div class="section mb-8">
+                <h2 class="text-2xl font-bold mb-4">Objective Breakdown:</h2>
+                <ul class="list-disc list-inside ml-4">
+                    <li>Minimum Trading Days: 2 days</li>
+                    <li>Max Daily Loss: $1,250</li>
+                    <li>Max Loss: $2,500</li>
+                    <li>Profit Target: $1,250</li>
+                </ul>
+            </div>
+
+            <div class="section mb-8">
+                <h2 class="text-2xl font-bold mb-4">Your Specific Rules:</h2>
+                <ul class="list-disc list-inside ml-4">
+                    <li>Instrument: NASDAQ (NAS100)</li>
+                    <li>Trading Session: New York session</li>
+                    <li>Risk-Reward Ratio: 1:1</li>
+                    <li>Daily Max Loss: 5% of account balance</li> <!-- Updated daily max loss -->
+                    <li>Consecutive Losers Limit: 3</li>
+                    <li>Trading Strategy: Support and resistance, pullbacks</li>
+                    <li>Timeframes: 1h, 15m, 5m</li> <!-- Updated timeframes -->
+                    <li>Trades Per Day: 8</li> <!-- Added trades per day -->
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="text-2xl font-bold mb-4">Trading Strategies:</h2>
+                <ul class="list-disc list-inside ml-4">
+                    <li><a href="support_resistance_strategy.html">Support and Resistance</a></li>
+                    <li><a href="pullback_strategy.html">Uptrend and Downtrend Pullback Strategy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div>
+            <div class="section mb-8">
+                <h2 class="text-2xl font-bold mb-4">Premarket Checklist:</h2>
+                <ul class="list-inside ml-4">
+                    <li class="checklist-item"><input type="checkbox">Review Economic Calendar</li>
+                    <li class="checklist-item"><input type="checkbox">Check Financial News</li>
+                    <li class="checklist-item"><input type="checkbox">Prepare Mentally</li>
+                    <li class="checklist-item"><input type="checkbox">Review Overnight Developments</li>
+                    <li class="checklist-item"><input type="checkbox">Analyze Key Charts</li>
+                    <li class="checklist-item"><input type="checkbox">Identify Pre-Market Movers</li>
+                    <li class="checklist-item"><input type="checkbox">Finalize Trading Plan</li>
+                    <li class="checklist-item"><input type="checkbox">Check Brokerage Account</li>
+                    <li class="checklist-item"><input type="checkbox">Assess Market Sentiment</li>
+                    <li class="checklist-item"><input type="checkbox">Review Your Strategy</li>
+                    <li class="checklist-item"><input type="checkbox">Review Trading Rules</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 class="text-2xl font-bold mb-4">Trading Rules:</h2>
+                <ul class="list-disc list-inside ml-4">
+                    <li>Risk on / Risk off</li>
+                    <li>Bull Trend / Bear Trend</li>
+                    <li>Trend / Trading Range</li>
+                    <li>High Probability / Low Probability</li>
+                    <li>If Trend:
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Swing more of the position</li>
+                        </ul>
+                    </li>
+                    <li>If Trading Range:
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Buy low, sell high, and scalp</li>
+                        </ul>
+                    </li>
+                    <li>Buy when the trend is up</li>
+                    <li>Sell when the trend is down</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

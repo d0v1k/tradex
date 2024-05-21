@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uptrend and Downtrend Pullback Strategy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c; /* Dark background */
+            color: #ffffff; /* White text */
+        }
+        h2 {
+            color: #60a5fa; /* Light blue for h2 headers */
+        }
+        h3 {
+            color: #3b82f6; /* Slightly darker blue for h3 headers */
+        }
+        a {
+            color: #3b82f6; /* Blue links */
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="section mb-8">
+        <h2 class="text-2xl font-bold mb-4">Uptrend and Downtrend Pullback Strategy</h2>
+        <p class="mb-6">Objective: Trade NASDAQ (NAS100) by buying on pullbacks during uptrends and selling on pullbacks during downtrends using a 9 EMA and 20 MA with candlestick pattern confirmation.</p>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Confluence Factors:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>9 EMA and 20 MA alignment</li>
+                <li>Candlestick Patterns</li>
+                <li>Volume Spikes</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Identifying Trends:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>Uptrend: 9 EMA is above the 20 MA, and both are sloping upwards.</li>
+                <li>Downtrend: 9 EMA is below the 20 MA, and both are sloping downwards.</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Entry Criteria:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li><strong>Buying on Pullbacks in Uptrend:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Price pulls back towards the 20 MA while in an uptrend on the 1-hour chart.</li> <!-- Updated timeframe -->
+                        <li>Confirmation: Look for bullish candlestick patterns (e.g., Hammer, Bullish Engulfing) near the 20 MA on the 15-minute chart.</li> <!-- Updated timeframe -->
+                        <li>Volume: Ensure there is a volume spike indicating strong buying interest.</li>
+                        <li>Entry: Enter a long position when all conditions are met and the price starts to bounce off the 20 MA.</li>
+                    </ul>
+                </li>
+                <li><strong>Selling on Pullbacks in Downtrend:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Price pulls back towards the 20 MA while in a downtrend on the 1-hour chart.</li> <!-- Updated timeframe -->
+                        <li>Confirmation: Look for bearish candlestick patterns (e.g., Shooting Star, Bearish Engulfing) near the 20 MA on the 15-minute chart.</li> <!-- Updated timeframe -->
+                        <li>Volume: Ensure there is a volume spike indicating strong selling interest.</li>
+                        <li>Entry: Enter a short position when all conditions are met and the price starts to bounce off the 20 MA.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Exit Criteria:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>Stop-Loss: Set just beyond the recent swing low (for buy trades) or swing high (for sell trades).</li>
+                <li>Take-Profit: Set at an equal distance to the stop-loss to maintain a 1:1 risk-reward ratio.</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Risk Management:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>Daily Risk: Limit losses to 5% of account balance per day. Stop trading for the day if this limit is reached.</li> <!-- Updated daily risk -->
+                <li>Consecutive Losses: Stop trading after three consecutive losing trades to avoid emotional decisions.</li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Execution Steps:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li><strong>Pre-Session Preparation:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Identify the current trend on the 1-hour chart using the 9 EMA and 20 MA.</li> <!-- Updated timeframe -->
+                        <li>Mark key support and resistance zones on your trading platform.</li>
+                    </ul>
+                </li>
+                <li><strong>During Trading:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Monitor price action around the 20 MA on the 15-minute chart for pullback opportunities.</li> <!-- Updated timeframe -->
+                        <li>Enter trades when all entry criteria are met.</li>
+                        <li>Place stop-loss and take-profit orders immediately upon entering a trade.</li>
+                    </ul>
+                </li>
+                <li><strong>Post-Trade Review:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Log each trade with entry/exit points, reasons for the trade, and outcomes.</li>
+                        <li>Review daily to identify patterns, learn from mistakes, and improve strategy.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-section mb-6">
+            <h3 class="text-xl font-semibold mb-2">Example Trade Scenarios:</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li><strong>Buying on Pullbacks in Uptrend:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Identify an uptrend with the 9 EMA above the 20 MA, both sloping upwards.</li>
+                        <li>Confirmation: Price pulls back to the 20 MA, a Hammer candlestick forms on the 15-minute chart, volume spike confirms buying interest.</li> <!-- Updated timeframe -->
+                        <li>Entry: Enter long when the price starts to bounce off the 20 MA, set stop-loss below the recent swing low, and take-profit at an equal distance to the stop-loss.</li>
+                    </ul>
+                </li>
+                <li><strong>Selling on Pullbacks in Downtrend:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Setup: Identify a downtrend with the 9 EMA below the 20 MA, both sloping downwards.</li>
+                        <li>Confirmation: Price pulls back to the 20 MA, a Shooting Star candlestick forms on the 15-minute chart, volume spike confirms selling interest.</li> <!-- Updated timeframe -->
+                        <li>Entry: Enter short when the price starts to bounce off the 20 MA, set stop-loss above the recent swing high, and take-profit at an equal distance to the stop-loss.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="back-button mt-8">
+        <a href="index.html" class="text-blue-500">Back to Main Page</a>
+    </div>
+</body>
+</html>
